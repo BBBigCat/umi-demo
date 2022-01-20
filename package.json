@@ -1,8 +1,10 @@
 {
   "private": true,
   "scripts": {
-    "start": "umi dev",
-    "build": "umi build",
+    "start:dev": "dev=true umi dev",
+    "start:prod": "dev=false umi dev",
+    "build:dev": "dev=true umi build",
+    "build:prod": "dev=false umi build",
     "postinstall": "umi generate tmp",
     "prettier": "prettier --write '**/*.{js,jsx,tsx,ts,less,md,json}'",
     "test": "umi-test",
